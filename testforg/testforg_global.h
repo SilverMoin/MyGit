@@ -1,0 +1,12 @@
+#ifndef TESTFORG_GLOBAL_H
+#define TESTFORG_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(TESTFORG_LIBRARY)
+#  define TESTFORGSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define TESTFORGSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // TESTFORG_GLOBAL_H
